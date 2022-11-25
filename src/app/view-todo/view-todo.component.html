@@ -1,6 +1,4 @@
-<app-navbar>
-
-</app-navbar>
+<app-navbar></app-navbar>
 <div class="container">
     <table class="table">
         <thead>
@@ -12,11 +10,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let i of data">
-            <td scope="row">{{i.name}} </td>
-            <td colspan="1">{{i.designation}}</td>
-            <td>{{i.salary}}</td>
-            <td>{{i.company}}</td>
+          <tr *ngFor="let i of data" >
+            <td> {{i.userId}} </td>
+            <td> {{i.id}}</td>
+            <td>{{i.title}} </td>
+            <td>{{i.completed}} </td>
+            
           </tr>
         </tbody>
       </table>
