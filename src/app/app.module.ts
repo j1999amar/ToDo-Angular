@@ -17,6 +17,7 @@ const myRouter: Routes = [
     component: AddTodoComponent,
   },
 ];
+import { EditTodoComponent } from './edit-todo/edit-todo.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,11 @@ const myRouter: Routes = [
     NavbarComponent,
     ViewTodoComponent,
     NavbarComponent
+    EditTodoComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
   ],
   
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter),FormsModule],
