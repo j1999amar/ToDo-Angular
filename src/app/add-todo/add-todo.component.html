@@ -5,26 +5,25 @@
             <div class="row g-3">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">UserId</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="userid" [(ngModel)]="userid" id="" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"> 
                     <label for=""
                         class="form-label">Id</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="id" [(ngModel)]="id" id="" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"> 
                     <label for=""
                         class="form-label">Title</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="title" [(ngModel)]="title" id="" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     
-                    <label for=""
-                        class="form-label">Complete Status</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <label for=""class="form-label">Complete Status</label>
+                    <input type="text" name="complete" [(ngModel)]="complete" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"> <button
-                        class="btn btn-primary">Submit</button>
+                        class="btn btn-primary" (click)="readValue()">Submit</button>
                 </div>
             </div>
         </div>
