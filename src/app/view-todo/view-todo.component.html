@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <table class="table table-dark table-hover">
+    <thead>
+          <tr>
+            <th scope="col">User Id</th>
+            <th scope="col"> Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Complete Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of data" >
+            <td> {{i.userId}} </td>
+            <td> {{i.id}}</td>
+            <td>{{i.title}} </td>
+            <td>{{i.completed}} </td>
+            
+          </tr>
+        </tbody>
+      </table>
+</div>
