@@ -26,17 +26,13 @@ import { EditTodoComponent } from './edit-todo/edit-todo.component';
     AddTodoComponent,
     NavbarComponent,
     ViewTodoComponent,
-    NavbarComponent
+    NavbarComponent,
     EditTodoComponent
   ],
  
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter),HttpClientModule],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter),FormsModule,HttpClientModule],
   
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter),FormsModule],
+  
   providers: [],
   bootstrap: [AppComponent],
 })
