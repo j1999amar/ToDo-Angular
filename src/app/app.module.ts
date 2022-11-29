@@ -7,6 +7,7 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewTodoComponent } from './view-todo/view-todo.component';
 import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 const myRouter: Routes = [
   {
     path: '',
@@ -17,6 +18,7 @@ const myRouter: Routes = [
     component: AddTodoComponent,
   },
 ];
+import { EditTodoComponent } from './edit-todo/edit-todo.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,17 @@ const myRouter: Routes = [
     AddTodoComponent,
     NavbarComponent,
     ViewTodoComponent,
+    NavbarComponent
+    EditTodoComponent
   ],
  
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter),HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter),FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
