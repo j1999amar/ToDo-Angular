@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewTodoComponent } from './view-todo/view-todo.component';
+import { HttpClientModule } from '@angular/common/http'
 const myRouter: Routes = [
   {
     path: '',
@@ -24,12 +25,8 @@ const myRouter: Routes = [
     NavbarComponent,
     ViewTodoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    
-  ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter)],
+ 
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter),HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
