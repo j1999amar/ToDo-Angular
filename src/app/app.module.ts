@@ -16,12 +16,18 @@ const myRouter: Routes = [
     component: AddTodoComponent,
   },
 ];
+
 @NgModule({
   declarations: [
     AppComponent,
     AddTodoComponent,
     NavbarComponent,
     ViewTodoComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(myRouter)],
   providers: [],
